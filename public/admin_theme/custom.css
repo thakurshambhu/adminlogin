@@ -1,0 +1,122 @@
+.skin-blue .sidebar-menu .treeview-menu>li.active>a, .skin-blue .sidebar-menu .treeview-menu>li>a:hover{
+    background: #2c3b41;
+}
+._switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 24px;
+  margin-bottom: 0;
+}
+
+._switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+._slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+._slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + ._slider {
+  background-color: #2196F3;
+}
+
+input:focus + ._slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + ._slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded _sliders */
+._slider._round {
+  border-radius: 17px;
+}
+
+._slider._round:before {
+  border-radius: 50%;
+}
+
+._btn-default{
+    background-color: #f4f4f4;
+    color: #000;
+    border-color: #000;
+}
+
+.user-panel>.info{ padding-top: 14px;}
+.navbar-nav>.user-menu>.dropdown-menu{width: 100%;max-width: 280px;min-width: 175px;}
+._tile_icon, ._tile_icon:hover{ color: #fff;}
+.alert{ padding: 10px; }
+.alert .close{ color: white; opacity: 1 !important;}
+
+
+.error-inline {
+    color: red;
+    display: inline;
+}
+.btn-blue{
+    border-color: #0073b7 !important;
+    background-color: #0073b7 !important;
+    color: white;
+}
+.small-box:hover .icon {
+    font-size: 70px;
+    color: rgba(255,255,255,0.95);
+}
+.small-box .icon{
+    top: 8px;
+    font-size: 65px;
+    color: rgba(255,255,255,0.7);
+    right: 15px;
+}
+
+
+._header-blade .navbar .nav>li>a>.label{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    text-align: center;
+    font-size: 14px;
+    padding: 2px 3px;
+    line-height: .9;
+    background-color: red !important;
+}
+._header-blade .navbar-nav>.notifications-menu>.dropdown-menu>li .menu>li a {
+    color: #444444;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+    cursor: default;
+}
+.notification_del{ cursor: pointer !important ;}
+.notification_a{ text-transform: capitalize;}
+#notification_dialog .dataTables_info{ margin: 20px 0;}
+#notification_dialog .dataTables_paginate{ text-align: right; }
+#notification_dialog .dataTables_filter{ text-align: right;}
+#notification_dialog .dataTables_info,
+#notification_dialog .pagination{ margin: 2px 0 !important;}
